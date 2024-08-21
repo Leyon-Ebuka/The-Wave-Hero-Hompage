@@ -1,0 +1,408 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&family=Qwitcher+Grypen:wght@400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Qwitcher+Grypen:wght@400;700&display=swap');
+
+/*
+--- 01 TYPOGRAPHY SYSTEM
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+
+- Font weights
+Default: 400
+Medium: 500
+Semi-bold: 600
+Bold: 700
+
+
+- Line heights
+Default: 1
+Small: 1.05
+Medium: 1.2
+Paragraph default: 1.6
+
+
+- Letter spacing
+-0.5px
+0.75px
+
+
+--- 02 COLORS
+- Primary: ##ff7200
+- Tints:
+#ffe8cc
+#ffc078
+#ff922b
+#eb984e
+#d9480f
+
+- Shades:
+#cf711f
+#45260a
+
+
+- Accents:
+- Greys
+
+
+#888
+#767676 (lightest grey allowed on #fff)
+#6f6f6f (lightest grey allowed on #fdf2e9)
+#555
+#333
+
+
+--- 05 SHADOWS
+
+
+0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+
+
+--- 06 BORDER-RADIUS
+
+
+Default: 9px
+Medium: 11px
+
+
+--- 07 WHITESPACE
+
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+
+.qwitcher-grypen-regular {
+  font-family: "Qwitcher Grypen", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.qwitcher-grypen-bold {
+  font-family: "Qwitcher Grypen", cursive;
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+body{ 
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+    url("Images/bg/bg3.jpg") no-repeat;
+    background-size: cover;
+    color: #fff;
+    font-family: "PT Sans Narrow", sans-serif;
+    
+    /* font-style: normal;sans-serif;   */
+    
+    /* .pt-sans-narrow-regular {
+        font-family: "PT Sans Narrow", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      } */
+      
+      /* .pt-sans-narrow-bold {
+        font-family: "PT Sans Narrow", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+      } */
+      
+    
+  }
+
+.container {
+    width: 1200px;
+    margin: 1px auto;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    gap: 7rem;
+    margin-top: 20px;
+    
+}
+
+.the-wave{
+    color: #ff7200 ;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-weight: bolder;
+    font-size: 24px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+}
+
+.icon{
+    stroke: #ff7200;
+    height: 24px;
+    width: 24px;
+}
+
+.icon-main{
+    stroke: #ff7200;
+    height: 50px;
+    width: 50px;
+   
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:  32px;
+    font-size: px;
+}
+
+.form-card-1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav_link:link,
+.nav_link:visited
+{
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.nav_link:hover, .nav_link:active{
+    color: #ff7200;
+}
+
+.welcome-text{
+   font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 30px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.8em;
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+}
+
+.to{
+    font-family: "Qwitcher Grypen", cursive;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 45px;
+    letter-spacing: 2;
+}
+
+.join:link, .join:visited{
+    margin-top: 35px;
+    display: inline-block;
+    font-size: large;
+    color: #eee;
+    border: 1px solid #ff7200;
+    background-color: #ff7200;
+    text-transform: uppercase;
+    padding: 10px 35px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+   
+   
+}
+
+.join:hover, .join:active{
+background-color: #fff;
+border: 1px solid #fff;
+color: #ff7200;
+}
+
+.spa_header{
+    color: #ff7200;
+    font-size: 65px;
+font-weight: bolder;
+
+}
+
+.welcome-text-1 {
+    line-height: 1.5;
+    margin-top: 24px;
+    font-weight: bold;
+   
+}
+
+section{
+    display: grid;
+    grid-template-columns: 500px 100px 225px;
+    grid-template-rows: 100px;
+    margin-top: 20px;
+}
+
+.form-card-1{
+    border: 1px solid #ff7200;
+    /* background-color: #ff7200;  */
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 24px;
+}
+
+.form-card-1 button{
+border: none;
+background-color: #ff7200;
+color: #fff;
+font-weight: bold;
+font-size: 16px;
+cursor: pointer;
+padding: 10px 12px;
+border-radius: 8px;
+}
+
+.form-card-1 input{
+    border: none;
+    outline: none;
+    color: white;
+    background: transparent;
+    font-size: 16px;
+    padding: 4px 0;
+
+}
+
+
+.form-card-2{
+    width: 200px;
+   margin: 0 auto;
+}
+
+.leyon-card-2{
+    grid-column: -1 ;
+    margin-left: 2.4rem;
+    background-color: rgba(0, 0, 0, 0.446);
+    border-radius: 8px;
+    /* box-shadow: 0 12px 24px rgba(0, 0, 0, 0.649) ; */
+    box-shadow: 2px 1px 20px #ff730079 ;
+    /* box-shadow: 0 12px 24px rgba(0, 0, 0, 0.623) ; */
+    height: 32rem;
+  text-align: center;
+
+
+
+}
+
+.leyon-card-cover{
+    width: 280px;
+    margin: 25px auto;
+    padding: 10px 5px;
+}
+
+.bro{
+    text-transform: uppercase;
+    font-size: large;
+    font-weight: bolder;
+}
+
+.wave_span {
+    color: #ff7200;
+    letter-spacing: 0.5px;
+    font-weight: bolder;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.leyon-card-2-guys{
+    margin-top: 2px;
+    text-align: center;
+    border: 1px solid #ff7200;
+    padding: 25px 5px;
+}
+
+.leyon_form{
+    border: 1px solid #ff7200;
+    text-align: center;
+}
+
+.leyon_form label{
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.email{
+    border: none;
+    border-bottom: 1px solid #ff7200;
+    background: none;
+    outline: none;
+    color: #eee;
+    font: 18px;
+    
+}
+
+.leyon_form button{
+    padding: 10px 65px;
+    margin-bottom: 20px;
+    display: inline;
+    color: #eee;
+    background-color: #ff7200;
+    border: none;
+    border-radius: 7px;
+    font-weight: bold;
+    font-size: large;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.leyon_form button:hover{
+    background-color: #eee;
+    color: #ff7200;
+}
+
+.signup:link, .signup:visited {
+    color: #ff7200;
+    text-decoration: none;
+}
+
+.signup:hover, .signup:active{
+   text-decoration: underline;
+}
+
+
+
+
+/* 
+.login{
+    color: #ff7200;
+    font-weight: bold;
+    font-size: larger;
+    border: 1px solid #fff;
+    background-color: #fff;
+    display: inline-block;
+    padding: 3px 4px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.hi{
+    margin-top: 15px;
+    color: #000;
+    font-weight: bold;
+    border: 1px solid #ff7200;
+    background-color: #ff7200;
+    padding: 3px 6px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.me{
+    text-align: center;
+}
+
+.me p {
+    line-height: 1;
+} */
